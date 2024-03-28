@@ -23,6 +23,8 @@ export function App() {
 
             const layout = await LayoutService.get(window.location.pathname, query.get("sfaction"));
 
+            console.log('layout', layout);
+
             const requestContext: RequestContext = {
                 isEdit: window.location.search.indexOf("sfaction=edit") !== -1,
                 isPreview: window.location.search.indexOf("sfaction=preview") !== -1,
