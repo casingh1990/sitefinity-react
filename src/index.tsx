@@ -3,6 +3,8 @@ import App from './App';
 import { createRoot } from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
+import store from './store/store';
+import { Provider } from 'react-redux'
 
 import {
     BrowserRouter as Router,
@@ -13,9 +15,11 @@ import {
 createRoot(document.body)
 .render(
     // <React.StrictMode>
-    <Router>
-        <Routes>
-            <Route path="*" element={<App />} />
-        </Routes>
-    </Router>
+    <Provider store={store}>
+        <Router>
+            <Routes>
+                <Route path="*" element={<App />} />    
+            </Routes>
+        </Router>
+    </Provider>
 );
