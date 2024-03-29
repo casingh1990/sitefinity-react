@@ -1,0 +1,46 @@
+{
+    "Name":"ButtonElement",
+    "Caption":"ButtonElement",
+    "PropertyMetadata":[
+       {
+          "Name":"Basic",
+          "Sections":[
+             {
+                "Name":"Main",
+                "Title":null,
+                "Properties":[
+                   {
+                      "Name":"label",
+                      "DefaultValue":null,
+                      "Title":"label",
+                      "Type":"string",
+                      "SectionName":null,
+                      "CategoryName":null,
+                      "Properties":{
+ 
+                      },
+                      "TypeChildProperties":[
+ 
+                      ],
+                      "Position":0
+                   }
+                ],
+                "CategoryName":"Basic"
+             }
+          ]
+       },
+       {
+          "Name":"Advanced",
+          "Sections":[
+             {
+                "Name":"AdvancedMain",
+                "Title":null,
+                "Properties":[
+ 
+                ],
+                "CategoryName":null
+             }
+          ]
+       }
+    ]
+ }

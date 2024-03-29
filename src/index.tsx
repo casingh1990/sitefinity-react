@@ -3,7 +3,7 @@ import App from './App';
 import { createRoot } from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
-import store from './store/store';
+import { store } from './store/store';
 import { Provider } from 'react-redux'
 
 import {
@@ -15,11 +15,10 @@ import {
 createRoot(document.body)
 .render(
     // <React.StrictMode>
-    <Provider store={store}>
-        <Router>
-            <Routes>
-                <Route path="*" element={<App />} />    
-            </Routes>
-        </Router>
-    </Provider>
+    
+    <Router>
+        <Routes>
+            <Route path="*" element={<App />} />    
+        </Routes>
+    </Router>
 );

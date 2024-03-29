@@ -1,0 +1,61 @@
+{
+    "Name":"InputElement",
+    "Caption":"InputElement",
+    "PropertyMetadata":[
+       {
+          "Name":"Basic",
+          "Sections":[
+             {
+                "Name":"Main",
+                "Title":null,
+                "Properties":[
+                   {
+                      "Name":"Name",
+                      "DefaultValue":null,
+                      "Title":"Name",
+                      "Type":"string",
+                      "SectionName":null,
+                      "CategoryName":null,
+                      "Properties":{
+ 
+                      },
+                      "TypeChildProperties":[
+ 
+                      ],
+                      "Position":0
+                   },
+                   {
+                    "Name":"label",
+                    "DefaultValue":null,
+                    "Title":"Label",
+                    "Type":"string",
+                    "SectionName":null,
+                    "CategoryName":null,
+                    "Properties":{
+
+                    },
+                    "TypeChildProperties":[
+
+                    ],
+                    "Position":1
+                 }
+                ],
+                "CategoryName":"Basic"
+             }
+          ]
+       },
+       {
+          "Name":"Advanced",
+          "Sections":[
+             {
+                "Name":"AdvancedMain",
+                "Title":null,
+                "Properties":[
+ 
+                ],
+                "CategoryName":null
+             }
+          ]
+       }
+    ]
+ }

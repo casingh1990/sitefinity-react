@@ -9,6 +9,8 @@ import { RenderWidgetService } from './framework/services/render-widget-service'
 import { RequestContext } from './framework/services/request-context';
 import { WidgetModel } from './framework/widgets/widget-model';
 import { widgetRegistry } from './widget-registry';
+import { Provider } from 'react-redux';
+import { store } from './store/store';
 
 export function App() {
     RenderWidgetService.widgetRegistry = widgetRegistry;
@@ -71,9 +73,11 @@ export function App() {
 
     return (
         <Fragment>
-            {appState?.widgets.map((child) => {
-                return RenderWidgetService.createComponent(child, appState.requestContext);
-            })}
+            <Provider store={store}>
+                {appState?.widgets.map((child) => {
+                    return RenderWidgetService.createComponent(child, appState.requestContext);
+                })}
+            </Provider>
         </Fragment>
     )
 }
